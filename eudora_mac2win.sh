@@ -4,10 +4,8 @@
 #   process_Eudora_attach_Mac.awk
 #
 # DESCRIPTION
-#   Migrate e-mail from Eudora Macintosh to Eudora Windows. Steps:
-#   * Append extension ".fol" to all Eudora folders
-#   * Convert every file in the "Mail Folder" to DOS text format,
-#   re-arranging attachment references
+#   Migrate e-mail from Eudora Macintosh to Eudora Windows. 
+#
 #   See README for a detailed description of the migration proccess
 #
 # SYNTAX
@@ -42,7 +40,8 @@ EMPTY_MAILBOX_LOG="empty_mailboxes.log"
 # Do a simple check on the parameters
 if [ $# -ne 2 ]
 then
-	echo Wrong number of parameters $# -- see help
+	echo Syntax: $0 MAC_MAIL_ROOT FUTURE_WIN_ATTACHMENTS_DIR
+	echo See README.md for details
 	exit 1
 elif [ ! -d "$1" ]
 then
