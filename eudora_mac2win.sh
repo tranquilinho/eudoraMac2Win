@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # NAME
-#   process_Eudora_attach_Mac.awk
+#   eudora_mac2win.sh
 #
 # DESCRIPTION
 #   Migrate e-mail from Eudora Macintosh to Eudora Windows. 
